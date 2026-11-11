@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tralas Klaipėda 24 | Tralo paslaugos</title>
+<meta name="description" content="Tralo ir techninės pagalbos paslaugos Klaipėdoje ir aplinkiniuose miestuose. Skambinkite visą parą.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101010;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #080808;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #292929;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffc400;
+}
+
+.logo span {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffc400;
+}
+
+.hero {
+    min-height: 570px;
+    padding: 100px 7%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #080808 30%, #171717 100%);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #ffc400;
+}
+
+.hero p {
+    color: #c5c5c5;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #ffc400;
+    color: #080808;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 900;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.btn-dark {
+    background: transparent;
+    border: 2px solid #ffc400;
+    color: #ffc400;
+}
+
+section {
+    padding: 75px 7%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    color: #ffc400;
+}
+
+.services {
+    background: #171717;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #222;
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #ffc400;
+    transform: translateY(-5px);
+}
+
+.card .icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #ffc400;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #bbb;
+}
+
+.about {
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+.about p {
+    color: #bbb;
+    font-size: 18px;
+}
+
+.advantages {
+    background: #171717;
+}
+
+.advantages .card {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+    background: #080808;
+}
+
+.contact p {
+    color: #bbb;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.phone {
+    color: #ffc400;
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #050505;
+    color: #888;
+    border-top: 1px solid #292929;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 75px 7%;
+        min-height: 480px;
+    }
+
+    section {
+        padding: 55px 7%;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">TRALAS <span>KLAIPĖDA 24</span></div>
+
+    <nav>
+        <a href="#pradzia">Pradžia</a>
+        <a href="#paslaugos">Paslaugos</a>
+        <a href="#apie">Apie mus</a>
+        <a href="#kontaktai">Kontaktai</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero" id="pradzia">
+    <div class="hero-content">
+        <h1>Pagalba kelyje <span>24/7</span></h1>
+
+        <p>
+            Tralo ir techninės pagalbos paslaugos
+            Klaipėdoje bei aplinkiniuose miestuose.
+            Greitai, patikimai ir atsakingai.
+        </p>
+
+        <a class="btn" href="tel:+37064442649">
+            📞 SKAMBINTI DABAR
+        </a>
+
+        <a class="btn btn-dark" href="#paslaugos">
+            Mūsų paslaugos
+        </a>
+    </div>
+</section>
+
+<section class="services" id="paslaugos">
+    <h2 class="section-title">Mūsų <span>paslaugos</span></h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🚛</div>
+            <h3>Automobilių transportavimas</h3>
+            <p>Automobilių pervežimas tralu pagal jūsų poreikius.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔧</div>
+            <h3>Techninė pagalba</h3>
+            <p>Pagalba sugedus automobiliui kelyje.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚗</div>
+            <h3>Automobilių pervežimas</h3>
+            <p>Pervežame automobilius į pasirinktą vietą.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📍</div>
+            <h3>Pagalba regione</h3>
+            <p>Dirbame Klaipėdoje ir aplinkiniuose miestuose.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="apie">
+    <div class="about">
+        <h2 class="section-title">Apie <span>mus</span></h2>
+
+        <p>
+            „Tralas Klaipėda 24“ – tralo ir techninės pagalbos
+            paslaugos Klaipėdoje bei aplinkiniuose miestuose.
+            Mūsų tikslas – suteikti patikimą pagalbą ir
+            kuo greičiau atvykti į pagalbą.
+        </p>
+    </div>
+</section>
+
+<section class="advantages">
+    <h2 class="section-title">Kodėl verta rinktis <span>mus?</span></h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Greita pagalba</h3>
+            <p>Stengiamės kuo greičiau atvykti į pagalbą.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤝</div>
+            <h3>Patikimumas</h3>
+            <p>Atsakingai atliekame kiekvieną užsakymą.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💰</div>
+            <h3>Aiškios kainos</h3>
+            <p>Kaina derinama pagal atstumą ir paslaugą.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="kontaktai">
+    <h2 class="section-title">Reikia <span>pagalbos?</span></h2>
+
+    <p>Susisiekite su mumis ir aptarsime jūsų poreikius.</p>
+
+    <a class="phone" href="tel:+37064442649">
+        +370 644 42649
+    </a>
+
+    <a class="btn" href="tel:+37064442649">
+        📞 SKAMBINTI
+    </a>
+
+    <p style="margin-top:30px;">
+        Klaipėda ir aplinkiniai miestai
+    </p>
+</section>
+
+</main>
+
+<footer>
+    © 2026 Tralas Klaipėda 24. Visos teisės saugomos.
+</footer>
+
+</body>
+</html>
